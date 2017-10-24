@@ -29,6 +29,12 @@ public class SnoozeHUD extends javax.swing.JFrame {
 
         jMenu1 = new javax.swing.JMenu();
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        Gen_Pass1 = new javax.swing.JPasswordField();
+        Gen_User1 = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        GenPassword_Label1 = new javax.swing.JLabel();
+        GenUsername_Label1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         DB_Type = new javax.swing.JComboBox<>();
         Gen_Pass = new javax.swing.JPasswordField();
@@ -46,6 +52,57 @@ public class SnoozeHUD extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+
+        Gen_Pass1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gen_Pass1ActionPerformed(evt);
+            }
+        });
+
+        Gen_User1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gen_User1ActionPerformed(evt);
+            }
+        });
+
+        GenPassword_Label1.setText("Gateway Password:");
+
+        GenUsername_Label1.setText("Gateway Username:");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jSeparator2)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Gen_User1)
+                            .addComponent(Gen_Pass1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(GenUsername_Label1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(GenPassword_Label1, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(374, 374, 374)))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(GenUsername_Label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Gen_User1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(GenPassword_Label1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Gen_Pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(356, 356, 356))
+        );
+
+        jTabbedPane1.addTab("Current Snoozed Items", jPanel2);
 
         DB_Type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MSSQL", "MySQL", "Oracle", "Sybase" }));
         DB_Type.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +150,7 @@ public class SnoozeHUD extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jSeparator1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -109,10 +166,10 @@ public class SnoozeHUD extends javax.swing.JFrame {
                             .addComponent(DBUsername_Label, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(DBPassword_Label, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(48, 48, 48)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(DB_Type, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DBType_Label))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,7 +198,7 @@ public class SnoozeHUD extends javax.swing.JFrame {
                 .addGap(356, 356, 356))
         );
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jTabbedPane1.addTab("Past Snoozed Items", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -183,6 +240,14 @@ public class SnoozeHUD extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DB_TypeActionPerformed
 
+    private void Gen_Pass1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gen_Pass1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gen_Pass1ActionPerformed
+
+    private void Gen_User1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gen_User1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gen_User1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -194,8 +259,9 @@ public class SnoozeHUD extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                if ("Windows".equals(info.getName())) {
+                    //javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -226,12 +292,18 @@ public class SnoozeHUD extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> DB_Type;
     private javax.swing.JTextField DB_User;
     private javax.swing.JLabel GenPassword_Label;
+    private javax.swing.JLabel GenPassword_Label1;
     private javax.swing.JLabel GenUsername_Label;
+    private javax.swing.JLabel GenUsername_Label1;
     private javax.swing.JPasswordField Gen_Pass;
+    private javax.swing.JPasswordField Gen_Pass1;
     private javax.swing.JTextField Gen_User;
+    private javax.swing.JTextField Gen_User1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }

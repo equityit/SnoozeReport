@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+target
+bin
+
 # OS generated files #
 ######################
 .DS_Store
@@ -34,5 +36,3 @@ buildNumber.properties
 .mvn/timing.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
->>>>>>> 113a7e924778e867f40cdde0977e80a0bb94d071
