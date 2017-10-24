@@ -36,136 +36,171 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jSeparator1" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Gen_User" max="32767" attributes="0"/>
-                          <Component id="Gen_Pass" min="-2" pref="139" max="-2" attributes="0"/>
-                          <Component id="GenUsername_Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="GenPassword_Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="DB_Pass" max="32767" attributes="0"/>
-                          <Component id="DB_User" pref="139" max="32767" attributes="0"/>
-                          <Component id="DBUsername_Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="DBPassword_Label" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="DB_Type" min="-2" pref="139" max="-2" attributes="0"/>
-                          <Component id="DBType_Label" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="GenUsername_Label" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Gen_User" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DBUsername_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="DBType_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DB_User" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="DB_Type" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DBPassword_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="GenPassword_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="DB_Pass" min="-2" max="-2" attributes="0"/>
-                  <Component id="Gen_Pass" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace pref="171" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="DBUsername_Label">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Database Username:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="DBPassword_Label">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Database Password:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="GenPassword_Label">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gateway Password:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="GenUsername_Label">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gateway Username:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JPasswordField" name="DB_Pass">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_PassActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JPasswordField" name="Gen_Pass">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gen_PassActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="Gen_User">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gen_UserActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="DB_User">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_UserActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator1">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="DB_Type">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="DBType_Label">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Database Type"/>
-      </Properties>
-    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tab1">
+                <Property name="tabTitle" type="java.lang.String" value="tab1"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jSeparator1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="Gen_User" max="32767" attributes="0"/>
+                                  <Component id="Gen_Pass" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <Component id="GenUsername_Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GenPassword_Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="DB_Pass" max="32767" attributes="0"/>
+                                  <Component id="DB_User" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <Component id="DBUsername_Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DBPassword_Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="DB_Type" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <Component id="DBType_Label" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="GenUsername_Label" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="DBUsername_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DBType_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="DB_User" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DB_Type" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Gen_User" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="GenPassword_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DBPassword_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="DB_Pass" min="-2" max="-2" attributes="0"/>
+                          <Component id="Gen_Pass" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                      <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JComboBox" name="DB_Type">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="MSSQL"/>
+                    <StringItem index="1" value="MySQL"/>
+                    <StringItem index="2" value="Oracle"/>
+                    <StringItem index="3" value="Sybase"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_TypeActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="Gen_Pass">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gen_PassActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DBType_Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Database Type"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="Gen_User">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gen_UserActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DBUsername_Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Database Username:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="DB_User">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_UserActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DBPassword_Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Database Password:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator1">
+            </Component>
+            <Component class="javax.swing.JLabel" name="GenPassword_Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gateway Password:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="GenUsername_Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gateway Username:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="DB_Pass">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DB_PassActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
